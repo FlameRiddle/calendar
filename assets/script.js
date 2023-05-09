@@ -129,7 +129,7 @@ function generate(){
                 }else{
                     midday = 'Miércoles';
                 }
-                weekdays = ['Antemingo', 'Domingo', 'Domipues', 'Jueves', midday, 'Miado', 'Sedía', 'Martes', 'Viernes'];
+                weekdays = ['Anteminges', 'Dominges', 'Domipues', 'Jueves', midday, 'Miades', 'Sedía', 'Martes', 'Viernes'];
                 months = ['la Primavera', 'el Verano', 'el Otoño', 'el Invierno'];
                 misclang = ["El Calendario Mejor", " día de ", "Año ", "El Calendario Cojonudísimo", "Muy pronto..."];
                 switch(alias){
