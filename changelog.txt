@@ -20,4 +20,4 @@ Reworked date changing majorly. Fixed weekdays, which now show the entire week f
 Works with use strict. Cleaned up script
 
 1.7
-Made weekdays more uniform (Niedziela and Środa to Niedzielek and Środek in Polish, in spanish each now ends with -es). Added possibility to change date with left and right arrow keys
+Made weekdays more uniform (Niedziela and Środa to Niedzielek and Środek in Polish, in spanish each now ends with -es). Added possibility to change date with left and right arrow keys. Added the judgement day.

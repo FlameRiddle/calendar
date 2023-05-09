@@ -204,17 +204,22 @@ function generate(){
     
         background.style.backgroundColor = colors[month];
     
-        output4.innerHTML = '';
+        left.innerHTML = '';
         current = 0;
         for (let i=1; i <= 9; i++){
             if(current == weekday){
-                output4.innerHTML += "<div class='weekday' id='current'>" + weekdays[current] + "</div>";
+                left.innerHTML += "<div class='weekday' id='current'>" + weekdays[current] + "</div>";
             } else{
-                output4.innerHTML += "<div class='weekday'>" + weekdays[current] + "</div>";
+                left.innerHTML += "<div class='weekday'>" + weekdays[current] + "</div>";
             };
             ++current;
         };
 
+    }else if(elapsed == 3600000){
+        document.body.style.background = 'none';
+        document.body.style.display = 'flex';
+        document.body.style.flexDirection = 'column';
+        document.body.innerHTML = "<img src='assets/e.gif' style='display:block'></img>";
     }else{
         window.alert("Please insert correct date format");
     }
