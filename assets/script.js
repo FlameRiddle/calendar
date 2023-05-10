@@ -162,7 +162,7 @@ function generate(){
                 }else{
                     midday = 'Środek';
                 }
-                weekdays = ['Przedniedziałek', 'Niedzielek', 'Poniedziałek', 'Czwartek', midday, 'Śrobotek', 'Szóstek', 'Bortek', 'Piątek'];
+                weekdays = ['Przedniedziałek', 'Niedziałek', 'Poniedziałek', 'Czwartek', midday, 'Śrobotek', 'Szóstek', 'Bortek', 'Piątek'];
                 months = ['Wiosny', 'Lata', 'Jesieni', 'Zimy'];
                 misclang = ["Najlepszy Kalendarz", " dzień ", "Rok ", "Najniesamowitszy Kalendarz", "Już wkrótce..."];
                 switch(alias){
