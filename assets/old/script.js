@@ -4,19 +4,18 @@ const today = new Date();
 const start = new Date('2023-02-14');
 const elapsed = ((today - start)/(1000*60*60*24)) + 1;
 const colors = ['#baffc9', '#ffffba', '	#ffdfba', '	#bae1ff'];
-const charset = "ABCDEFGHI-JKLMNOPQR-STUVWXYZ&-";
 
 let month = (Math.floor(elapsed / 90)) % 4;
 let year = Math.floor(elapsed / 360);
 let monthday = (Math.floor(elapsed) % 90);
 
+let current;
 let weekdays;
 let months;
 let midday;
 let lang;
 let misclang;
 let holiday;
-let singlemonth;
 
 function pad(u){
     switch(u){
@@ -27,7 +26,6 @@ function pad(u){
 }
 
 console.log(Math.floor(elapsed));
-console.log(Math.floor(elapsed) % 27);
 console.log(Math.floor(elapsed) % 9);
 console.log(Math.floor(elapsed / 90))
 
@@ -53,23 +51,36 @@ document.body.addEventListener("keyup", function(event) {
     }
 });
 
-document.querySelector('button').addEventListener('click', l => {
-    monthday = +document.getElementById("day").value;
-    month = +document.getElementById("month").value - 1;
-    year = +document.getElementById("year").value;
-    generate();
-})
-document.querySelectorAll('input').forEach(element => {
-    element.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            monthday = +document.getElementById("day").value;
-            month = +document.getElementById("month").value - 1;
-            year = +document.getElementById("year").value;
-            generate();
-        }
-    });
-})
+document.getElementById("day")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        monthday = +document.getElementById("day").value;
+        month = +document.getElementById("month").value - 1;
+        year = +document.getElementById("year").value;
+        generate();
+    }
+});
+document.getElementById("month")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        monthday = +document.getElementById("day").value;
+        month = +document.getElementById("month").value - 1;
+        year = +document.getElementById("year").value;
+        generate();
+    }
+});
+document.getElementById("year")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        monthday = +document.getElementById("day").value;
+        month = +document.getElementById("month").value - 1;
+        year = +document.getElementById("year").value;
+        generate();
+    }
+});
 
 function generate(){
     if(monthday >= 0 && monthday <= 89 && month >= 0 && month <= 3 && year >= 0 && year <= 9999 && Number.isInteger(monthday) == true && Number.isInteger(month) == true && Number.isInteger(year) == true){
@@ -86,9 +97,8 @@ function generate(){
                     midday = 'Wednesday';
                 }
                 weekdays = ['Preday', 'Sunday', 'Afterday', 'Thursday', midday, 'Frensday', 'Sixday', 'Tuesday', 'Friday'];
-                singlemonth =['Spring', 'Summer', 'Fall', 'Winter'];
                 months = ['Spring', 'Summer', 'Fall', 'Winter'];
-                misclang = ["The World's Best Calendar", " day of ", "Year ", "The Awesomest Calendar", "This silly little website was made by FlameRiddle", "Old look (might not work on most devices)", "Today is the nameday of"];
+                misclang = ["The World's Best Calendar", " day of ", "Year ", "The Awesomest Calendar", "Coming soon..."];
                 switch(alias){
                     case "00": holiday= "Today is Spring's Birthday!"; break;
                     case "023": holiday = "Today is Coner Day!"; break;
@@ -120,9 +130,8 @@ function generate(){
                     midday = 'Miércoles';
                 }
                 weekdays = ['Anteminges', 'Dominges', 'Domipues', 'Jueves', midday, 'Miades', 'Sedíes', 'Martes', 'Viernes'];
-                singlemonth = ['Primavera', 'Verano', 'Otoño', 'Invierno']
                 months = ['la Primavera', 'el Verano', 'el Otoño', 'el Invierno'];
-                misclang = ["El Calendario Mejor", " día de ", "Año ", "El Calendario Cojonudísimo", "credits", "old", "nameday"];
+                misclang = ["El Calendario Mejor", " día de ", "Año ", "El Calendario Cojonudísimo", "Muy pronto..."];
                 switch(alias){
                     case "00": holiday = "Hoy tenemos el Cumpleaños de la Primavera!"; break;
                     case "023": holiday = "Hoy tenemos la Piñadilla!"; break;
@@ -154,9 +163,8 @@ function generate(){
                     midday = 'Środek';
                 }
                 weekdays = ['Przedniedziałek', 'Niedziałek', 'Poniedziałek', 'Czwartek', midday, 'Śrobotek', 'Szóstek', 'Bortek', 'Piątek'];
-                singlemonth = ['Wiosna', 'Lato', 'Jesień', 'Zima']
                 months = ['Wiosny', 'Lata', 'Jesieni', 'Zimy'];
-                misclang = ["Najlepszy Kalendarz", " dzień ", "Rok ", "Najniesamowitszy Kalendarz", "Ta głupiutka stronka została zrobiona przez FlameRiddle", "Stary wygląd (może nie działać na większości urządzeń)", "Dzisiaj imieniny"];
+                misclang = ["Najlepszy Kalendarz", " dzień ", "Rok ", "Najniesamowitszy Kalendarz", "Już wkrótce..."];
                 switch(alias){
                     case "00": holiday = "Dzisiaj Urodziny Wiosny!"; break;
                     case "023": holiday = "Dzisiaj Szyszkielniki!"; break;
@@ -192,20 +200,26 @@ function generate(){
         output3.innerText = misclang[2] + year;
         headline.innerText = misclang[3];
         events.innerText = holiday;
-        credits.innerText = misclang[4];
-        old.innerText = misclang[5];
-        output4.innerText = misclang[6];
-        output5.innerText = charset.charAt(monthday % 30);
-
-        document.querySelectorAll('section').forEach(element => {
-            element.style.background = "linear-gradient(" + colors[month] + ", #ffffff)";
-        })
+        right.innerText = misclang[4];
+    
+        background.style.background = "linear-gradient(" + colors[month] + ", #ffffff), url('texture.png')";
+    
+        left.innerHTML = '';
+        current = 0;
+        for (let i=1; i <= 9; i++){
+            if(current == weekday){
+                left.innerHTML += "<div class='weekday' id='current'>" + weekdays[current] + "</div>";
+            } else{
+                left.innerHTML += "<div class='weekday'>" + weekdays[current] + "</div>";
+            };
+            ++current;
+        };
 
     }else if(elapsed == 3600000){
         document.body.style.background = 'none';
         document.body.style.display = 'flex';
         document.body.style.flexDirection = 'column';
-        document.body.innerHTML = "<img src='img/e.gif' style='display:block'></img>";
+        document.body.innerHTML = "<img src='assets/e.gif' style='display:block'></img>";
     }else{
         window.alert("Please insert correct date format");
     }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="../img/favicon.webp">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="top" class="trans row">
+
+        <div id="date" class="trans">
+            <div>
+                <div class="trans row">
+                    <div id="prev" onclick="prev()">&lt;</div>
+                    <input class="date" type="number" id="day" min="0" max="89" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;">
+                    <div class="trans">.</div>
+                    <input class="date" type="number" id="month" min="1" max="4" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;">
+                    <div class="trans">.</div>
+                    <input class="date" type="number" id="year" min="0" max="9999" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;">
+                    <div id="next" onclick="next()">&gt;</div>
+                </div>
+                <img src="../img/arrow.png" id="arrow" onclick="generate()">
+            </div>
+        </div>
+        
+        <p id="headline"></p>
+
+        <div id="lang" class="trans row">
+            <img src="../img/pl.png" onclick="pl()">
+            <img src="../img/us.png" onclick="en()">
+            <img src="../img/es.png" onclick="es()">
+        </div>
+
+    </div>
+
+
+    
+    <div id="content" class="trans row">
+
+        <div id="left" class="solid col"></div>
+
+        <div id="mid" class="trans col">
+            <div id="main" class="solid">
+                <h1 id="output1"></h1>
+                <h2 id="output2"></h2>
+                <h2 id="output3"></h2>
+            </div>
+            <div id="events" class="solid"></div>
+        </div>
+
+        <div id="right" class="solid col"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
