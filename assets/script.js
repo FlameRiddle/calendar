@@ -129,7 +129,7 @@ function generate(){
                 }else{
                     midday = 'Miércoles';
                 }
-                weekdays = ['Anteminges', 'Dominges', 'Domipues', 'Jueves', midday, 'Miades', 'Sedía', 'Martes', 'Viernes'];
+                weekdays = ['Anteminges', 'Dominges', 'Domipues', 'Jueves', midday, 'Miades', 'Sedíes', 'Martes', 'Viernes'];
                 months = ['la Primavera', 'el Verano', 'el Otoño', 'el Invierno'];
                 misclang = ["El Calendario Mejor", " día de ", "Año ", "El Calendario Cojonudísimo", "Muy pronto..."];
                 switch(alias){
@@ -162,7 +162,7 @@ function generate(){
                 }else{
                     midday = 'Środek';
                 }
-                weekdays = ['Przedniedziałek', 'Niedzielek', 'Poniedziałek', 'Czwartek', midday, 'Śrobotek', 'Szóstek', 'Bortek', 'Piątek'];
+                weekdays = ['Przedniedziałek', 'Niedziałek', 'Poniedziałek', 'Czwartek', midday, 'Śrobotek', 'Szóstek', 'Bortek', 'Piątek'];
                 months = ['Wiosny', 'Lata', 'Jesieni', 'Zimy'];
                 misclang = ["Najlepszy Kalendarz", " dzień ", "Rok ", "Najniesamowitszy Kalendarz", "Już wkrótce..."];
                 switch(alias){
