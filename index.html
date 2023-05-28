@@ -17,11 +17,11 @@
             <div>
                 <div class="trans row">
                     <div id="prev" onclick="prev()">&lt;</div>
-                    <input type="number" id="day" min="0" max="89" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;">
+                    <input class="date" type="number" id="day" min="0" max="89" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;">
                     <div class="trans">.</div>
-                    <input type="number" id="month" min="1" max="4" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;">
+                    <input class="date" type="number" id="month" min="1" max="4" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;">
                     <div class="trans">.</div>
-                    <input type="number" id="year" min="0" max="9999" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;">
+                    <input class="date" type="number" id="year" min="0" max="9999" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;">
                     <div id="next" onclick="next()">&gt;</div>
                 </div>
                 <img src="assets/arrow.png" id="arrow" onclick="generate()">

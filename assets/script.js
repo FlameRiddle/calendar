@@ -202,7 +202,7 @@ function generate(){
         events.innerText = holiday;
         right.innerText = misclang[4];
     
-        background.style.backgroundColor = colors[month];
+        background.style.background = "linear-gradient(" + colors[month] + ", #ffffff), url('texture.png')";
     
         left.innerHTML = '';
         current = 0;
@@ -275,4 +275,4 @@ function prev(){
         }
     }
 }
-pl();
+en();
