@@ -21,3 +21,11 @@ Works with use strict. Cleaned up script
 
 1.7
 Made weekdays more uniform (Niedziela and Środa to Niedzielek and Środek in Polish, in spanish each now ends with -es). Added possibility to change date with left and right arrow keys. Added the judgement day.
+
+------------------------------------------------------------------------------------------------------------
+
+2.0
+Launched on a domain, reworked the design, added mobile compatibility and generally fixed responsiveness.
+
+2.1
+Starts up in your browser language. Made code more readable.
