@@ -182,11 +182,11 @@ function generate() {
 
     // Background
     document.querySelectorAll("section").forEach((element) => {
-      element.style.color =
-        colors[currentMonth];
+      element.style.color = colors[currentMonth];
     });
 
     // Display most text
+    console.log(output);
     document.title = langlists.misclang[0][lang];
     output[0].innerText = langlists.misclang[1][lang];
     output[2].innerText =
@@ -200,8 +200,14 @@ function generate() {
       output[4].innerText = events[0][lang];
     }
     output[3].innerText = langlists.misclang[4][lang] + currentYear;
-    output[5].innerText = langlists.misclang[5][lang];
-    output[6].innerText = langlists.misclang[6][lang];
+    output[5].innerText = langlists.misclang[8][lang];
+    output[6].innerText = langlists.misclang[9][lang].charAt(
+      Math.abs(
+        Math.floor(Math.sin(Number(alias)) * langlists.misclang[9][lang].length)
+      )
+    );
+    output[7].innerText = langlists.misclang[5][lang];
+    output[8].innerText = langlists.misclang[6][lang];
     // X, Days 0un
     if (currentMonthWeek % 2 == 0 && currentWeekDay == 4) {
       output[1].innerText = "X";
@@ -212,8 +218,7 @@ function generate() {
       output[1].innerText = "";
       monthday.innerText = "0";
       document.querySelectorAll("section").forEach((element) => {
-        element.style.color =
-          colors[4];
+        element.style.color = colors[4];
       });
     }
 

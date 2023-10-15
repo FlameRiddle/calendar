@@ -43,9 +43,10 @@
     {"en":" day of ", "pl":" dzień ", "es":" día de "},
     {"en":"Day ", "pl":"Dzień ", "es":"Día "},
     {"en":"Year ", "pl":"Rok ", "es":"Año "},
-    {"en":"Made by FlameRiddle", "pl":"Zrobiony przez FlameRiddle", "es":""},
-    {"en":"Old look", "pl":"Stary wygląd", "es":""},
+    {"en":"Made by FlameRiddle", "pl":"Zrobiony przez FlameRiddle", "es":"yet to be translated"},
+    {"en":"Old look", "pl":"Stary wygląd", "es":"yet to be translated"},
     {"en":"Today there's no special events...", "pl":"Nie ma dziś szczególnych wydarzeń...", "es":"Hoy no hay ningún evento especial..."},
-    {"en":"Today is the nameday of", "pl":"Dzisiaj imieniny", "es":""}
+    {"en":"Today is the nameday of", "pl":"Dzisiaj imieniny", "es":"yet to be translated"},
+    {"en":"ABCDEFGHIJKLMNOPQRSTUVWXYZ", "pl":"AĄBCĆDEĘFGHIJKLŁMNOÓPRSŚTUWYZŹŻ", "es":""}
 ]
 }

@@ -22,7 +22,7 @@
         <div class="col">
             <div id="date" class="row">
                 <div id="prev" class="click gray">&lt;</div>
-                <input type="number" id="day" min="0" max="89" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;">.
+                <input type="number" id="day" min="0" max="90" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;">.
                 <input type="number" id="month" min="1" max="4" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;">.
                 <input type="number" id="year" min="0" max="9999" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;">
                 <div id="next" class="click gray">&gt;</div>
@@ -39,8 +39,9 @@
         <p class="output" id="year">shit yourself</p>
         <p class="output" id="events">shit yourself</p>
     </section>
-    <section id="calendar">
-        coming soon!
+    <section id="namedays">
+        <p class="output"></p>
+        <h2 class="output"></h2>
     </section>
 </main>
 

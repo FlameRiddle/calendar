@@ -15,7 +15,6 @@ Fixed box sizing and centering. Massively optimized. Added possibility to check 
 
 1.6
 Reworked date changing majorly. Fixed weekdays, which now show the entire week from the start. Added Sex and Hip Hop days
-
 1.6.1
 Works with use strict. Cleaned up script
 
@@ -35,6 +34,7 @@ idk skipped an update
 
 2.3
 Fixed not working events, days X. Added days 0. Changed starting date.
-
 2.3.1
 Added dark mode
+2.3.2
+Brought back namedays in a new and improved manner
