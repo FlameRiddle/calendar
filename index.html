@@ -12,7 +12,7 @@
 <body>
     
 <header class="col">
-    <h1 id="headline">$headline</h1>
+    <h1 class="output" id="headline">js not working dummy</h1>
     <div class="row" id="head2">
         <div id="lang">
             <img class="lang" src="assets/img/us.png" id="en">
@@ -21,11 +21,11 @@
         </div>
         <div class="col">
             <div id="date" class="row">
-                <div onclick="prev()" class="click gray">&lt;</div>
+                <div id="prev" class="click gray">&lt;</div>
                 <input type="number" id="day" min="0" max="89" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;">.
                 <input type="number" id="month" min="1" max="4" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;">.
                 <input type="number" id="year" min="0" max="9999" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;">
-                <div onclick="next()" class="click gray">&gt;</div>
+                <div id="next" class="click gray">&gt;</div>
             </div>
             <button id="goto" class="click">-&gt;</button>
         </div>
@@ -34,25 +34,21 @@
 
 <main class="row">
     <section id="main" class="col">
-        <h2 id="output1">$weekday</h2>
-        <p id="output2">$monthday</p>
-        <p id="output3">$year</p>
-        <p id="events">$events</p>
+        <h2 class="output" id="weekday">shit yourself</h2>
+        <p class="output" id="monthday">shit yourself</p>
+        <p class="output" id="year">shit yourself</p>
+        <p class="output" id="events">shit yourself</p>
     </section>
     <section id="calendar">
         coming soon!
     </section>
-    <section id="nameday" class="col">
-        <p id="output4">$namedaytext</p>
-        <h2 id="output5">$letter</h3>
-    </section>
 </main>
 
 <footer class="col">
-    <a id="credits" href="https://flameriddle.github.io/epic-portfolio/">$credits</a>
-    <a id="old" href="assets/old/indexold.html">$old</a>
+    <a class="output" id="credits" href="https://flameriddle.github.io/epic-portfolio/">fix js</a>
+    <a class="output" id="old" href="assets/old/indexold.html">fix js</a>
 </footer>
 
 </body>
-<script src="assets/script.js"></script>
+<script type="module" src="js/script.js"></script>
 </html>

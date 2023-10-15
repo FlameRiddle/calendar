@@ -1,7 +1,7 @@
 'use strict';
 const background = document.getElementById('main');
 const today = new Date();
-const start = new Date('2023-02-14');
+const start = new Date('2023-03-20');
 const elapsed = ((today - start)/(1000*60*60*24)) + 1;
 const colors = ['#baffc9', '#ffffba', '	#ffdfba', '	#bae1ff'];
 
