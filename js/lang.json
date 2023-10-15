@@ -2,7 +2,7 @@
     "events":[
     {"alias":"01", "en":"Today is Spring's Birthday!", "pl":"Dzisiaj Urodziny Wiosny!", "es":"Hoy tenemos el Cumpleaños de la Primavera!"},
     {"alias":"024", "en":"Today is Coner Day!", "pl":"Dzisiaj Szyszkielniki!", "es":"Hoy tenemos la Piñadilla!"},
-    {"alias":"036", "en":"Today is Home Hearth Day!", "pl":"Dzisiaj Święto Domowego Ogniska!", "es":"Hoy tenemos Día del Hogar!"},
+    {"alias":"035", "en":"Today is Home Hearth Day!", "pl":"Dzisiaj Święto Domowego Ogniska!", "es":"Hoy tenemos Día del Hogar!"},
     {"alias":"045", "en":"Today is Spring's Name Day! Yippeee!!", "pl":"Dzisiaj Imieniny Wiosny! Hurraa!!", "es":"Hoy tenemos la Onomástica de la Primavera! Hurraa!!"},
     {"alias":"072", "en":"Today is Easter!!!", "pl":"Dzisiaj Wielkanoc!!!", "es":"Hoy tenemos la Pascua!!!"},
     {"alias":"076", "en":"Today is Sex Day!", "pl":"Dzisiaj Dzień Seksu!", "es":"Hoy tenemos el Día de la sexo!"},
@@ -18,8 +18,7 @@
     {"alias":"290", "en":"Today is Fall's Deathday....", "pl":"Dzisiaj Dzień Śmierci Jesieni....", "es":"Hoy tenemos el Día de la Muerte de el Otoño...."},
     {"alias":"31", "en":"Today is Winter's Birthday!", "pl":"Dzisiaj Urodziny Zimy!", "es":"Hoy tenemos el Cumpleaños de el Invierno!"},
     {"alias":"345", "en":"Today is Winter's Name Day! Yippeee!!", "pl":"Dzisiaj Imieniny Zimy! Hurraa!!", "es":"Hoy tenemos la Onomástica de el Invierno! Hurraa!!"},
-    {"alias":"390", "en":"Today is Winter's Deathday....", "pl":"Dzisiaj Dzień Śmierci Zimy....", "es":"Hoy tenemos el Día de la Muerte de el Invierno...."},
-    {"alias":"other", "en":"Today there's no special events...", "pl":"Nie ma dziś szczególnych wydarzeń...", "es":"Hoy no hay ningún evento especial..."}
+    {"alias":"390", "en":"Today is Winter's Deathday....", "pl":"Dzisiaj Dzień Śmierci Zimy....", "es":"Hoy tenemos el Día de la Muerte de el Invierno...."}
 ],
 "weekdays":[
     {"en":"Friday", "pl":"Piątek", "es":"Viernes"},
@@ -46,6 +45,7 @@
     {"en":"Year ", "pl":"Rok ", "es":"Año "},
     {"en":"This silly little website was made by FlameRiddle", "pl":"Ta głupiutka stronka została zrobiona przez FlameRiddle", "es":""},
     {"en":"Old look (might not work on most devices)", "pl":"Stary wygląd (może nie działać na większości urządzeń)", "es":""},
+    {"en":"Today there's no special events...", "pl":"Nie ma dziś szczególnych wydarzeń...", "es":"Hoy no hay ningún evento especial..."},
     {"en":"Today is the nameday of", "pl":"Dzisiaj imieniny", "es":""}
 ]
 }
