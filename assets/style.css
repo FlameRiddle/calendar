@@ -5,17 +5,18 @@
     user-select: none;
 }
 body{
-    background-color: #dce5f2;
+    background: linear-gradient(#313338, #26272B);
+    height: 75vh;
 }
 a{
     color: white;
 }
 header, footer{
-    background-color: black;
+    background-color: #17171A;
     color: white;
     position: fixed;
     width: 100vw;
-    padding: 20px 0px;
+    padding: 15px 0px;
 }
 header{
     top: 0;
@@ -38,15 +39,15 @@ footer{
     display: flex;
 }
 section{
-    background-color: white;
+    background-color: #17171A;
     border-radius: 30px;
     padding: 20px;
     font-size: 1.5rem;
     gap: 20px;
     font-weight: bold;
-    color: dimgray;
+    color: white;
     background-image: url('img/texture.png');
-    border: dimgray 4px solid;
+    border: #17171A 4px solid;
 }
 input,input:focus{
     color: white;
@@ -58,7 +59,7 @@ input,input:focus{
     -moz-appearance: textfield;
 }
 input:focus,button:hover,.gray:hover,a:hover{
-    color: lightgray;
+    color: white;
 }
 img{
     border-width: 2px;

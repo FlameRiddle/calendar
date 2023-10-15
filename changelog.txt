@@ -29,3 +29,12 @@ Launched on a domain, reworked the design, added mobile compatibility and genera
 
 2.1
 Starts up in your browser language. Made code more readable.
+
+2.2
+idk skipped an update
+
+2.3
+Fixed not working events, days X. Added days 0. Changed starting date.
+
+2.3.1
+Added dark mode

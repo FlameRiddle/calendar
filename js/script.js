@@ -182,12 +182,8 @@ function generate() {
 
     // Background
     document.querySelectorAll("section").forEach((element) => {
-      element.style.background =
-        "linear-gradient(" + colors[currentMonth] + ", #ffffff)";
-      element.style.background =
-        "url('../assets/img/texture.png'), linear-gradient(" +
-        colors[currentMonth] +
-        ", #ffffff)";
+      element.style.color =
+        colors[currentMonth];
     });
 
     // Display most text
@@ -216,10 +212,8 @@ function generate() {
       output[1].innerText = "";
       monthday.innerText = "0";
       document.querySelectorAll("section").forEach((element) => {
-        element.style.background =
-          "url('../assets/img/texture.png'), linear-gradient(" +
-          colors[4] +
-          ", #ffffff)";
+        element.style.color =
+          colors[4];
       });
     }
 
