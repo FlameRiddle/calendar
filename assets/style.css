@@ -48,6 +48,7 @@ section{
     color: white;
     background-image: url('img/texture.png');
     border: #17171A 4px solid;
+    box-shadow: 0 0 0.6em 0.5em #26272B
 }
 input,input:focus{
     color: white;
