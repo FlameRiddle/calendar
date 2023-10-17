@@ -204,9 +204,12 @@ function generate() {
     output[5].innerText = langlists.misclang[8][lang];
     output[6].innerText = langlists.misclang[9][lang].charAt(
       Math.abs(
-        Math.floor(Math.sin(Number(alias)) * langlists.misclang[9][lang].length)
+        Math.floor(Math.sin(Number(alias)) * (langlists.misclang[9][lang].length - 1))
       )
     );
+    console.log(Math.abs(
+      Math.floor(Math.sin(Number(alias)) * (langlists.misclang[9][lang].length - 1))
+    ) + 1)
     output[7].innerText = langlists.misclang[5][lang];
     output[8].innerText = langlists.misclang[6][lang];
     // X, Days 0un
