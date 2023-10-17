@@ -5,15 +5,9 @@
     user-select: none;
 }
 body{
-    background: linear-gradient(#313338, #26272B);
     height: 75vh;
 }
-a{
-    color: white;
-}
 header, footer{
-    background-color: #17171A;
-    color: white;
     position: fixed;
     width: 100vw;
     padding: 15px 0px;
@@ -39,28 +33,20 @@ footer{
     display: flex;
 }
 section{
-    background-color: #17171A;
     border-radius: 30px;
     padding: 20px;
     font-size: 1.5rem;
     gap: 20px;
     font-weight: bold;
-    color: white;
-    background-image: url('img/texture.png');
-    border: #17171A 4px solid;
-    box-shadow: 0 0 0.6em 0.5em #26272B
+    border: 4px solid;
 }
 input,input:focus{
-    color: white;
     background-color: transparent;
     border: none;
     outline: none;
     appearance: none;
     font-size: 1.5rem;
     -moz-appearance: textfield;
-}
-input:focus,button:hover,.gray:hover,a:hover{
-    color: white;
 }
 img{
     border-width: 2px;
@@ -71,13 +57,11 @@ img{
     transition: 200ms;
 }
 img:hover{
-    border-color: white;
     transition: 200ms;
 }
 button{
     height: 50%;
     width: 100%;
-    color: white;
     background-color: transparent;
     font-weight: bold;
     border: none;
@@ -96,9 +80,29 @@ main{
 .click{
     cursor: pointer;
 }
-table{
-    font-size: 0.6rem;
+
+
+
+.font,input{
+    color: #FFFFFF;
 }
+img:hover{
+    border-color: #FFFFFF;
+}
+input:focus,button:hover,.gray:hover,a:hover{
+    color: #E3E5E8;
+}
+.background{
+    background-color: #17171A;
+}
+section{
+    border-color: #17171A;
+}
+body{
+    background: linear-gradient(#313338, #26272B);
+}
+
+
 
 @media (max-width:410px){
     header, footer{

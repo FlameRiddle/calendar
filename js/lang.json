@@ -48,5 +48,12 @@
     {"en":"Today there's no special events...", "pl":"Nie ma dziś szczególnych wydarzeń...", "es":"Hoy no hay ningún evento especial..."},
     {"en":"Today is the nameday of", "pl":"Dzisiaj imieniny", "es":"yet to be translated"},
     {"en":"ABCDEFGHIJKLMNOPQRSTUVWXYZ", "pl":"AĄBCĆDEĘFGHIJKLŁMNOÓPRSŚTUWYZŹŻ", "es":""}
+],
+"themes":[
+    {"dark":"#313338", "light":"#FFFFFF"},
+    {"dark":"#26272B", "light":"#F2F3F5"},
+    {"dark":"#17171A", "light":"#E3E5E8"},
+    {"dark":"#FFFFFF", "light":"#17171A"},
+    {"dark":"#E3E5E8", "light":"#26272B"}
 ]
 }

@@ -10,6 +10,7 @@ const today = new Date();
 const start = new Date("2023-03-20");
 const elapsed = (today - start) / (1000 * 60 * 60 * 24) + 1;
 
+let theme = 'dark';
 const yearMonths = 4;
 const monthDays = 91;
 const monthWeeks = 10;
@@ -180,7 +181,7 @@ function generate() {
     pad("month");
     pad("year");
 
-    // Background
+    // Theme
     document.querySelectorAll("section").forEach((element) => {
       element.style.color = colors[currentMonth];
     });
@@ -209,7 +210,7 @@ function generate() {
     output[7].innerText = langlists.misclang[5][lang];
     output[8].innerText = langlists.misclang[6][lang];
     // X, Days 0un
-    if (currentMonthWeek % 2 == 0 && currentWeekDay == 4) {
+    if (currentMonthWeek % 2 == 0 && currentWeekDay == 5) {
       output[1].innerText = "X";
     } else {
       output[1].innerText = langlists.weekdays[currentWeekDay][lang];
