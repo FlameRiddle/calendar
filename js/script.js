@@ -207,9 +207,6 @@ function generate() {
         Math.floor(Math.sin(Number(alias)) * (langlists.misclang[9][lang].length - 1))
       )
     );
-    console.log(Math.abs(
-      Math.floor(Math.sin(Number(alias)) * (langlists.misclang[9][lang].length - 1))
-    ) + 1)
     output[7].innerText = langlists.misclang[5][lang];
     output[8].innerText = langlists.misclang[6][lang];
     // X, Days 0un
