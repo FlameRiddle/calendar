@@ -231,7 +231,7 @@ function generate() {
     document.body.innerHTML =
       "<img src='img/e.gif' style='display:block'></img>";
   } else {
-    window.alert("Please insert correct date format");
+    window.alert("Please insert correct date format (dd.m.yyyy)");
   }
 }
 
