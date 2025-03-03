@@ -1,7 +1,22 @@
 "use strict";
 
 // Import
-import langlists from "./lang.json" assert { type: "json" };
+function loadLang() {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', 'js/lang.json', false); // `false` makes it synchronous
+  xhr.send();
+
+  if (xhr.status === 200) {
+    return JSON.parse(xhr.responseText);
+  } else {
+    console.error('Error loading JSON:', xhr.statusText);
+  }
+}
+
+let langlists = loadLang(); // This will block until the JSON is fully loaded
+console.log(langlists); // Now you can use langlists as a variable
+
+
 const background = document.getElementById("main");
 const output = document.querySelectorAll(".output");
 const colors = ["#baffc9", "#ffffba", "	#ffdfba", "	#bae1ff", "#b0b7c2"];

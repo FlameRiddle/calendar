@@ -45,10 +45,10 @@
     {"en":" day of ", "pl":" dzień ", "es":" día de "},
     {"en":"Day ", "pl":"Dzień ", "es":"Día "},
     {"en":"Year ", "pl":"Rok ", "es":"Año "},
-    {"en":"Made by FlameRiddle", "pl":"Zrobiony przez FlameRiddle", "es":"yet to be translated"},
-    {"en":"Old look", "pl":"Stary wygląd", "es":"yet to be translated"},
+    {"en":"Created by FlameRiddle", "pl":"Stworzony przez FlameRiddle", "es":"Creado por FlameRiddle"},
+    {"en":"Old look", "pl":"Stary wygląd", "es":"Aspecto antiguo"},
     {"en":"Today there's no special events...", "pl":"Nie ma dziś szczególnych wydarzeń...", "es":"Hoy no hay ningún evento especial..."},
-    {"en":"Today is the nameday of", "pl":"Dzisiaj imieniny", "es":"yet to be translated"},
+    {"en":"Today is the nameday of", "pl":"Dzisiaj imieniny", "es":"Hoy es el onomástico de"},
     {"en":"ABCDEFGHIJKLMNOPQRSTUVWXYZ", "pl":"ABCĆDEFGHIJKLŁMNOPRSŚTUWYZŻ", "es":"AÁBCDEÉFGHIÍJKLMNOÓPQRSTUÚVWXYZ"}
 ],
 "themes":[
